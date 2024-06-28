@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/ontario"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ontario Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Details for {{ record.report_date | date:'MMM d, y' }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Previous Day Total Doses Administered: {{ record.previous_day_total_doses_administered }}</p>
+      <p>Previous Day At Least One: {{ record.previous_day_at_least_one }}</p>
+      <p>Previous Day Fully Vaccinated: {{ record.previous_day_fully_vaccinated }}</p>
+      <p>Total Doses Administered: {{ record.total_doses_administered }}</p>
+      <p>Total Individuals At Least One: {{ record.total_individuals_at_least_one }}</p>
+      <p>Total Individuals Partially Vaccinated: {{ record.total_individuals_partially_vaccinated }}</p>
+      <p>Total Doses In Fully Vaccinated Individuals: {{ record.total_doses_in_fully_vaccinated_individuals }}</p>
+      <p>Total Individuals Fully Vaccinated: {{ record.total_individuals_fully_vaccinated }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-textarea [(ngModel)]="message" placeholder="Write your message here..."></ion-textarea>
+  </ion-item>
+  
+  <ion-button expand="full" (click)="sendMessage()">Send Message</ion-button>
+  <ion-button expand="full" color="primary" (click)="goBack()">Back</ion-button>
+</ion-content>

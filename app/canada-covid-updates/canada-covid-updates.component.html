@@ -1,0 +1,13 @@
+<div *ngIf="covidData">
+  <h2>COVID-19 Key Updates</h2>
+  <p>Cases Today: {{ covidData.casesToday }}</p>
+  <p>Total Cases: {{ covidData.totalCases }}</p>
+  <p>Active Cases: {{ covidData.activeCases }}</p>
+  <p>Total Recovered: {{ covidData.totalRecovered }}</p>
+  <p>Deaths Today: {{ covidData.deathsToday }}</p>
+  <p>Total Deaths: {{ covidData.totalDeaths }}</p>
+  <p>Tested Today: {{ covidData.testedToday }}</p>
+  <p>Total Tested: {{ covidData.totalTested }}</p>
+  <p>Percent Positive: {{ covidData.percentPositive }}%</p>
+  <p>People Tested: {{ covidData.peopleTestedPerMillion }}</p>
+</div>

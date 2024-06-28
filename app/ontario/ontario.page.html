@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ontario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="status-container">
+    <div class="status-card">
+      <h2>ONTARIO STATUS OF CASES</h2>
+      <p>Total Cases: 266363</p>
+      <p>Resolved: 240494</p>
+      <p>Deaths: 6145</p>
+      <p>Hospitalized: 1273</p>
+      <p>ICU: 353</p>
+      <p>Ventilator: 216</p>
+    </div>
+  </div>
+
+  <div *ngIf="message" class="message-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Message</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ message }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let record of records" (click)="viewDetail(record)">
+      {{ record.report_date | date: 'MMMM dd, yyyy' }}
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,40 @@
+.status-container {
+ 
+    margin-top: 20px;
+  }
+  
+  .status-card {
+    background-color: #ffd700;
+    padding: 15px;
+    border-radius: 10px;
+   
+  }
+  
+  .message-container {
+    margin: 20px;
+  }
+  
+  ion-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-card-header {
+    background: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  
+  ion-card-title {
+    font-size: 1.2em;
+    padding: 10px 0;
+  }
+  
+  ion-card-content {
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  

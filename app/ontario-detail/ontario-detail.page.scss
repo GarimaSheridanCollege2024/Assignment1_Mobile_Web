@@ -1,0 +1,37 @@
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #757575;
+  }
+  
+  .message {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #3880ff;
+  }
+  .status-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .status-card {
+    background-color: #ffd700;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+  }
+  
+  ion-item {
+    margin: 10px 0;
+  }
+  
+  ion-button {
+    --background: #007bff;
+    --background-activated: #0056b3;
+    --background-focused: #0056b3;
+  }
+  
